@@ -31,7 +31,7 @@ pipeline {
                 bat """
                 docker stop simple_app_gradle_container || echo Container not running
                 docker rm simple_app_gradle_container || echo Container not found
-                docker run -d --name simple_app_gradle_container -p 9090:9090 simple_app_gradle
+                docker run -d --name simple_app_gradle_container -p 9091:9091 simple_app_gradle
                 """
             }
         }
